@@ -13,7 +13,9 @@ let changeColor=function (){
     function setcolor2  (){
     document.body.style.backgroundColor=randomColor()
     }
+    if(!set){
     set=setInterval(setcolor2,2000)
+    }
 }
 let stopChangeColor=function (){
     clearInterval(set)
